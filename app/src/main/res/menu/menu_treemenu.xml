@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_sbzl"
+        android:icon="@mipmap/ic_launcher"
+        android:title="设备资料" />
+    <item
+        android:id="@+id/menu_xsjl"
+        android:icon="@mipmap/ic_launcher"
+        android:title="巡视记录" />
+    <item
+        android:id="@+id/menu_csjl"
+        android:icon="@mipmap/ic_launcher"
+        android:title="测试记录" />
+    <item
+        android:id="@+id/menu_jxjl"
+        android:icon="@mipmap/ic_launcher"
+        android:title="检修记录" />
+    <item
+        android:id="@+id/menu_gzrz"
+        android:icon="@mipmap/ic_launcher"
+        android:title="工作日志" />
+    <item
+        android:id="@+id/menu_xxgl"
+        android:icon="@mipmap/ic_launcher"
+        android:title="信息管理" />
+    <item
+        android:id="@+id/menu_xmgl"
+        android:icon="@mipmap/ic_launcher"
+        android:title="项目管理" />
+    <item
+        android:id="@+id/menu_zhcxtj"
+        android:icon="@mipmap/ic_launcher"
+        android:title="综合查询统计" />
+    <item
+        android:id="@+id/menu_bzyb"
+        android:icon="@mipmap/ic_launcher"
+        android:title="班组月报" />
+    <item
+        android:id="@+id/menu_fjgj"
+        android:icon="@mipmap/ic_launcher"
+        android:title="附加工具" />
+
+
+</menu>

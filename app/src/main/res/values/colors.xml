@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titlebar">#145351</color>
+    <color name="colorPrimary">#0ba25d</color>
+    <color name="colorPrimaryDark">#098049</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#87000000</color>
+    <color name="text_disabled">#38000000</color>
+
+    <!--splashActivity-->
+    <color name="gray">#FFF0F0F0</color>
+    <color name="gray_deep">#c9000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#FFFFFF</color>
+
+    <color name="mask_color">#66000000</color>
+
+    <color name="text_lgray">#808080</color>
+    <color name="text_gray">#323232</color>
+
+    <color name="col666666">#666666</color>
+    <color name="colFFF2EF">#FFF2EF</color>
+    <color name="colF4F4F4">#F4F4F4</color>
+
+    <color name="main_green">#2c9f93</color>
+
+    <color name="main_color">#2c9f93</color>
+    <color name="divider">#cccccc</color>
+
+    <color name="main_green_deep">#00796b</color>
+    <color name="main_green_light">#f0f6f5</color>
+
+    <color name="main_index">#F5F5F5</color>
+    <color name="chat_title_bg">#427BED</color>
+
+    <color name="task_item_line">#c5dddb</color>
+    <color name="task_item_font">#155452</color>
+
+    <color name="custom_default_fill">#f2f2f2</color>
+    <color name="custom_default_edge">#f2f2f2</color>
+    <color name="custom_active_fill">#eeeeee</color>
+    <color name="custom_active_edge">#eeeeee</color>
+    <color name="custom_disabled_fill">#f2f2f2</color>
+    <color name="custom_disabled_edge">#f2f2f2</color>
+    <color name="custom_font">#444444</color>
+
+    <color name="custom_button_default_fill">#247a76</color>
+    <color name="custom_button_default_edge">#8bc3aa</color>
+    <color name="custom_button_active_fill">#329d98</color>
+    <color name="custom_button_active_edge">#8bc3aa</color>
+
+</resources>

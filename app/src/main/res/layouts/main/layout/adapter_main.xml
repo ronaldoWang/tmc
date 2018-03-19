@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/view_shadow"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="left|center_vertical"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="left|center_vertical"
+                    >
+
+                <TextView
+                    android:id="@+id/main_tv_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="测试数据电缆线路抢修项目"
+                    android:textSize="16dp"
+                    android:textColor="@color/text_gray"
+                    android:layout_marginLeft="17dp"/>
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="left|center_vertical"
+                    >
+
+                    <TextView
+                        android:id="@+id/main_tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="(2017-06-09)"
+                        android:gravity="left|center_vertical"
+                        android:textSize="12dp"
+                        android:layout_marginLeft="10dp"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/main_tv_t1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="【记录人】"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/main_tv_t2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:text="叶志豪"
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/main_tv_t3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:text="【时间】："
+                    android:textSize="12dp"/>
+
+                <TextView
+                    android:id="@+id/main_tv_t4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2017-06-09"
+                    android:textSize="12dp"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

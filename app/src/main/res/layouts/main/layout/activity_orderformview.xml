@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:title="订单详细" />
+
+    <cn.droidlover.xstatecontroller.XStateController
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="门店名称" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_shopName"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="联系方式" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_shopContactDesc"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+
+                    <ImageView
+                        android:id="@+id/order_iv_shopContactDesc"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_perm_group_phone_calls" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="入住日期" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_checkInDate"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="离店日期" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_checkOutDate"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="主订单号" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_masterOrderNo"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="子订单号" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_subOrderNo"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="确  认  号" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_orderConfirmNo"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="房         价" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_totalSalePrice"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="TMC名称" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_tmcName"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="品牌名称" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_brandName"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="房型名称" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_roomTypeDesc"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="房  间  数" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_roomNumber"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="顾客信息" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_guest"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/more_item_top_background"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="2"
+                        android:text="" />
+
+                    <com.beardedhen.androidbootstrap.BootstrapLabel
+                        android:id="@+id/order_label_guest2"
+                        style="@style/wrapping_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        app:bootstrapBrand="secondary"
+                        app:bootstrapHeading="h6" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </cn.droidlover.xstatecontroller.XStateController>
+</LinearLayout>
